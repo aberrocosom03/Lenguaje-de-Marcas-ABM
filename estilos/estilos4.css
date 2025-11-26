@@ -1,0 +1,15 @@
+p:nth-child(odd){
+    background-color: blueviolet;
+}
+p:nth-child(even){
+    background-color: rgb(0, 255, 191);
+}
+
+p:last-child{
+    background-color: rgb(255, 145, 0);
+}
+/*
+p:nth-child(5){
+    background-color: rgb(50, 131, 18);
+}*/
+
