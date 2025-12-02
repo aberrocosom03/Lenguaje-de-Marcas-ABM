@@ -8,8 +8,22 @@
 #dos{
     font: italic bold 14px Arial;
     letter-spacing: 5px;
+    background-color: rgb(187, 187, 255, 0.9);
+/* El 0.9 para elegir la intensidad del color*/
+}
+
+#cuatro p{
+    font-size: 20px;
+    color:000000;
+    text-align: justify;
+    width:300px;
+    height:150px;
+    background-color: rgb(214, 0, 14, 0.5);
+    overflow: auto;
 
 }
+
+
 
 #dos a:link{
     text-decoration: none;
