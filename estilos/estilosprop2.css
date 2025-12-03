@@ -1,6 +1,7 @@
 body{
     background-image: url("/imagenes/fondo.png");
 }
+
 #capitulo{
     font:bold 48px arial, Helvetica, sans-serif;
     color:rgb(123,34,34);
@@ -8,10 +9,10 @@ body{
     width: 750px;
     margin:60px auto;
     padding: 1px 5px;
-    background-color: bisque;
-    border: 8px solid #ff0000;
-    border-radius: 20px;
-    box-shadow: black 20px 20px 15px;
+    border: 8px solid #000000;
+    border-radius: 60px;
+    box-shadow: #772f2f 10px 10px 15px inset;
+    background:-webkit-radial-gradient(center,ellipse,red 10%,white 40%,blue 50%);
 
 }
 #texto p{
@@ -25,3 +26,51 @@ body{
     background-image: url("/imagenes/fondo_lat.png");
     background-repeat: repeat-y;
 }
+#final{
+    width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    font:bold 200px Arial,Verdana;
+    color:red;
+    text-shadow: -10px -10px 0px black,
+                  10px -10px 0px black,
+                 -10px 10px 0px black,
+                  10px 10px 0px black;
+
+
+}
+#final2{
+    width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    font:bold 200px Arial,Verdana;
+    color:red;
+    text-shadow: 10px 10px 10px rgb(0, 0, 0)
+}
+
+#prueba{
+    font: 20px Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    text-shadow: 0px 0px 4px rgb(0,0,0);
+    text-align: justify;
+    width: 600px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 10px 60px;
+    overflow: auto;
+    background-color: white;
+    background-image: url(/imagenes/logo_transparente.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 4px solid #b4aeae;
+    border-radius: 30px 0px 0px 30px;
+    
+}
+
+
+
+
+
+
+
+
