@@ -1,0 +1,32 @@
+#capitulo{
+    font: 40px arial;
+    text-align: center;
+    width: 350px;
+    margin: 100px auto;
+    border:2px solid black;
+    border-radius: 60px;
+   animation:mianimacion 2s ease infinite normal none
+}
+
+@keyframes mianimacion {
+    0%{
+        background-color: #ffffff;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: green;
+        
+    }
+    75%{
+        background-color: coral;
+        transform: scale(1.25,1.25);
+        color:white
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+

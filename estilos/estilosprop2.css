@@ -11,9 +11,9 @@ body{
     padding: 1px 5px;
     border: 8px solid #000000;
     border-radius: 60px;
-    box-shadow: #772f2f 10px 10px 15px inset;
-    background:-webkit-radial-gradient(center,ellipse,red 10%,white 40%,blue 50%);
-
+   /** box-shadow: #772f2f 10px 10px 15px inset;**/
+    background:-webkit-radial-gradient(ellipse,rgb(29, 168, 17) 10%,white 40%,rgb(82, 77, 77) 50%);
+    filter:blur(4px)
 }
 #texto p{
     font: 20px Arial, Helvetica, sans-serif;
