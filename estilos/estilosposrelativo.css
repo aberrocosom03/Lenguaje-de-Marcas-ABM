@@ -1,0 +1,36 @@
+header{
+    background-color: #ffaaaa;
+    margin-bottom: 10px;
+
+}
+.contenedor{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(238, 181, 110);
+    position: relative;
+    top: 100px;
+    left: 100;
+
+}
+.barra{
+    border: 2px solid black;
+    box-shadow: 2px 5px rgb (42, 42 ,116) inset;
+    text-align: center;
+    background-color: rgb(119, 227, 233);
+    margin-bottom: 10px;
+    position: sticky;
+    top: 10px;
+
+
+}
+
+main{
+    background-color: #aaffaa;
+    position: fixed;
+   margin-left: 10px;
+
+}
+footer{
+    background-color: #aaaaff;
+    
+}
