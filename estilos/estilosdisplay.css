@@ -1,0 +1,22 @@
+.uno{
+    background-color: aqua;
+}
+.dos{
+    background-color: blue;
+}
+.tres{
+background-color: blueviolet;
+}
+.cuatro{
+background-color: bisque;
+}
+.cinco{
+background-color: darkgreen;
+}
+
+.pantalla{
+background-color: aliceblue;
+width: 400px;
+text-align: center;
+display: inline-block;
+}
