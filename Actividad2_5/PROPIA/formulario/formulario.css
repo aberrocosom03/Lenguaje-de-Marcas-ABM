@@ -1,0 +1,18 @@
+table {
+    margin:20px auto;
+    background-color: rgb(139, 136, 136);
+}
+#cabecera {
+    width: 800px;
+    margin: 5px auto;
+    text-align: center;
+    background-color: rgb(139, 136, 136);
+    border: 2px solid black;
+    border-radius: 60px;
+}
+
+div label {
+    display:inline-block;
+    width: 150px;
+    margin-right: 5px;
+}

@@ -1,0 +1,64 @@
+﻿.rotulo{
+width:900px;
+margin: 20px auto;
+padding: 10px;
+text-align: center;
+background: #0f76A0;
+color:#ffffff;
+font: bold 26px Verdana, sans-serif;
+border: 5px solid #000000;
+border-radius: 20px;
+}
+
+/*Reglas para mostrar imÃƒÆ’Ã‚Â¡genes y texto al pasar el ratÃƒÆ’Ã‚Â³n*/
+main{
+width:1100px;
+margin:20px auto;
+background:#9fc8d9;
+position:relative;
+overflow:auto;
+}
+
+.cajapadre_izq {
+width:500px;
+height:330px;
+margin:20px;
+position:relative;
+overflow:hidden;
+float:left;
+}
+
+.cajapadre_der {
+width:500px;
+height:330px;
+margin:20px;
+position:relative;
+overflow:hidden;
+float:right;
+}
+
+.contenedor {
+position: absolute;
+top:0px;
+width: 500px;
+height: 380px;
+}
+.contenedorsuperior {
+width: 500px;
+height: 330px;
+}
+.contenedorinferior {
+width: 500px;
+height: 40px;
+padding-top: 10px;
+background-color: rgba(200, 200, 200, 0.8);
+text-align: center;
+font: bold 26px Verdana, sans-serif;
+}
+.contenedor:hover {
+top: -50px;
+}
+
+
+
+

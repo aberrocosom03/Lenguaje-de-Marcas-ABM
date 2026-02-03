@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta Alumno DAW</title>
+    <link rel="stylesheet" href="formulario.css"/>
+</head>
+
+<body>
+    <div id="cabecera">
+        <h2>CFGS DAW</h2>
+    </div>
+    <table width="800">
+        <tr>
+            <td>
+                <p>
+                <form action="manejador.html" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>ALTA ESTUDIANTE</legend>
+                        <table width="700" cellpadding="5" style="border-spacing: 1;">
+                            <tr>
+                                <td colspan="2"><strong> > Paso 1. Identificación </strong></td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 25px;">
+                                    <fieldset class="cajas">
+                                        <legend>Datos del Estudiante</legend><br>
+                                        <div>
+                                            <label for="nombre">Nombre:</label>
+                                            <input type="text" id="nombre" size="20" maxlength="40">
+                                            <br><label for="apellidos">Apellidos:</label>
+                                            <input type="text" id="apellidos" size="50" maxlength="50">
+                                            <br><label for="email">Correo Electrónico:</label>
+                                            <input type="text" id="email" size="20" maxlength="40">
+                                        </div>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; padding: 25px;">
+                                    <fieldset class="cajas">                                        
+                                        <legend>Dirección del estudiante</legend><br>
+                                        <div>
+                                            <label for="calle">Calle:</label>
+                                            <input type="text" id="calle" size="50" maxlength="50">
+                                            <br><label for="numero">Número:</label>
+                                            <input type="text" id="numero" size="3" maxlength="3">
+                                            <br><label for="población">Localidad:</label>
+                                            <input type="text" id="poblacion" size="50" maxlength="50">
+                                        </div>
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="700" cellpadding="5" style="border-spacing: 1;">
+                            <tr>
+                                <td colspan="2"><strong> > Paso 2. Elección de Módulos</strong></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>Elige</legend>
+                                        <label for="LLMMSGI">
+                                        <input type="checkbox" id="LLMMSGI">
+                                        LLMMSGI</label>
+                                        <br><label for="SI">
+                                        <input type="checkbox" id="SI">
+                                        SI</label>
+                                        <br><label for="BBDD">
+                                        <input type="checkbox" id="BBDD">
+                                        BBDD</label>
+                                        <br><label for="FOL">
+                                        <input type="checkbox" id="FOL">
+                                        FOL</label>
+                                        <br><label for="programacion">
+                                        <input type="checkbox" id="programacion">
+                                        PROG</label>
+                                        <br><label for="ED">
+                                        <input type="checkbox" id="ED">
+                                        ED</label> 
+                                    </fieldset>
+                                </td>
+                                <td>
+                                    <fieldset>
+                                        <legend>Información de interés</legend>
+                                        Comentarios<br>
+                                        <textarea rows="6" cols="60" placeholder="Escriba aqui sus comentarios"></textarea>
+                                        
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <button type="submit"><img src="enviar.png"></button>
+                                    <button type="reset"><img src="reiniciar.png"></button>
+                                </td>
+                                <td><a href="../index.html">Volver</a></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

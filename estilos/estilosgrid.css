@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: 50px 100px 100px;
+    gap: 10px;
+}
+
+.rojo {
+    background-color: red;
+    text-align: center;
+}
+
+.verde {
+    background-color: green;
+    text-align: center;
+}
+
+.azul {
+    background-color: blue;
+    text-align: center;
+}
+.segundafila {
+    background-color: tomato;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    }
