@@ -5,7 +5,7 @@
 }
 
 body {
-
+    background-image: url(fondo.jpg);
     margin: 0px;
     padding: 0px;
 
@@ -24,6 +24,13 @@ body {
 #cabecera>div {
     flex: 1;
 }
+
+.encabezado1{
+    text-align: center;
+    color:white;
+    background-color:#0F76A0, #BEDEEB ;
+}
+
 
 
 
@@ -65,22 +72,23 @@ main {
     border-radius: 10px;
 }
 
- 
-    
-    #infoadicional p {
-        font: bold 16px Arial, sans-serif;
-        padding-left: 10px;
-        margin-top: 10px;
-        display: block;
-        background-color: rgb(182, 182, 190);
-        border:black 1px solid;
-        box-shadow: 5px 5px 5px #0b0b0b ;
-        border-radius: 20px;
-    }
-    #infoadicional a {
-        color:#0b0560;
-        /*text-decoration: none;*/
-    }
+
+
+#infoadicional p {
+    font: bold 16px Arial, sans-serif;
+    padding-left: 10px;
+    margin-top: 10px;
+    display: block;
+    background-color: rgb(182, 182, 190);
+    border: black 1px solid;
+    box-shadow: 5px 5px 5px #0b0b0b;
+    border-radius: 20px;
+}
+
+#infoadicional a {
+    color: #0b0560;
+    /*text-decoration: none;*/
+}
 
 .articulos {
     display: flex;
@@ -90,13 +98,13 @@ main {
     padding: 10px;
     background-color: aquamarine;
     border-radius: 10px;
-   
+
 }
 
 /* ARTÍCULOS con sombra y animación */
 .articulo {
     max-width: 500px;
-    padding:20px;
+    padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(28, 25, 25, 0.947);
