@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Laboratorio JavaScript - DAW</title>
@@ -59,6 +60,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="contenedor">
@@ -68,32 +70,91 @@
         <button onclick="limpiarConsola()">Limpiar consola</button>
 
         <div class="consola" id="consola">
-            Consola simulada:
+            Mensaje Consola
         </div>
 
-        
+
     </div>
 
     <script>
-        
-        // CONSOLA PARA IR AÑADIENDO CÓDIGO
-      
+
+
+
         function ejecutarEjemplo() {
 
-            let edad= 11;
-            let mensaje = edad > 18 ? "'mayor de edad'" : "'menor de edad'";
-            let cadena=new String("Hola, soy una cadena de texto");
-            let varcadena="Hola, soy una cadena de texto";
+           
             
-            
+            let mes = prompt("Introduce el mes")
+            switch (mes) {
 
-            // Mostrar en consola simulada
-            escribirConsola("Tienes " + edad + " años y eres " + mensaje);
-            escribirConsola("El tamaño de la cadena es: " + cadena.length);
-            escribirConsola("El tamaño de la varcadena es: " + varcadena.length);
+                case "Diciembre":
+                case "Enero":
+                case "Febrero":
+                    console.log("Estas en invierno.");
+                case "Marzo":
+                case "Abril":
+                case "Mayo":
+                    console.log("Estas en primavera.");
+                case "Junio":
+                case "Julio":
+                case "Agosto":
+                    console.log("Estas en verano.");
+                case "Septiembre":
+                case "Octubre":
+                case "Noviembre":
+                    console.log("Estas en otoño.");
+                default:
+                    console.log("Es un mes cualquiera.");
+            }
+
+            function retirarDinero(saldo, cantidad) {
+                try {
+                    console.log(`Saldo actual: ${saldo}€`);
+                    console.log(`Intentando retirar: ${cantidad}€`);
+                    if (cantidad > saldo) {
+                        throw new Error("Fondos insuficientes");
+                    }
+                    saldo -= cantidad;
+                    console.log(`Retiro exitoso. Nuevo saldo: ${saldo}€`);
+                    return saldo;
+                } catch (error) {
+                    console.error("Error:", error.message);
+                    return saldo; // Devolver saldo sin cambios
+                } finally {
+                    console.log("Transacción finalizada.\n"); // Siempre se ejecuta
+
+                }
+            }
+            // Pruebas
+            let saldoCuenta = 500;
+            saldoCuenta = retirarDinero(saldoCuenta, 200); // Retiro exitoso
+            saldoCuenta = retirarDinero(saldoCuenta, 400); // Error: Fondos insuficientes
+
+            for (let i = 0; i < 10; i++) {
+                console.log(i); // Imprime los números del 0 al 4
+            }
+
+
+
+
+            const persona = {
+                nombre: "Juan",
+                edad: 30,
+                ciudad: "Madrid"
+            };
+            for (propiedad in persona) {
+                console.log(propiedad + ": " + persona[propiedad]);
+            }
+
+            //OTRO EJEMPLO CON ARRAY //
+            let numeros = [1, 2, 3, 4, 5, 6];
+            for (indice in array) {
+                console.log(indice + ":" + array[indice]); //muestra el indice y el
+                valor
+            }
+            
         }
 
-        // Función para simular console.log en la página
         function escribirConsola(mensaje) {
             document.getElementById("consola").innerHTML += "<br>" + mensaje;
         }
@@ -104,4 +165,5 @@
     </script>
 
 </body>
+
 </html>

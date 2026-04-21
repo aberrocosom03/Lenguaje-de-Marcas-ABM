@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio JavaScript - DAW</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .contenedor {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(7, 19, 242, 0.5);
+        }
+
+        .zona-resultado {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            min-height: 50px;
+        }
+
+        .consola {
+            margin-top: 20px;
+            padding: 15px;
+            background: #1e1e1e;
+            color: #00ff90;
+            font-family: monospace;
+            border-radius: 5px;
+            min-height: 80px;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>Laboratorio JavaScript</h1>
+
+        <button onclick="ejecutarEjemplo()">Ejecutar ejemplo</button>
+        <button onclick="limpiarConsola()">Limpiar consola</button>
+
+        <div class="consola" id="consola">
+            Mensaje Consola
+        </div>
+
+
+    </div>
+
+    <script>
+
+
+
+        function ejecutarEjemplo() {
+
+            //EJERCICO 1
+            /**
+             A partir de una palabra, muestra en consola:
+             La longitud de la palabra.
+             La primera y última letra.
+             Si contiene la letra "a".
+             La palabra en mayúsculas y minúsculas.**/
+
+            let palabra = prompt("Escribe una palabra:");
+
+            console.log("Longitud:", palabra.length);
+            console.log("Primera letra:", palabra[0]);
+            console.log("Última letra:", palabra[palabra.length - 1]);
+            console.log('¿Contiene "a"?', palabra.includes("a"));
+            console.log("Mayúsculas:", palabra.toUpperCase());
+            console.log("Minúsculas:", palabra.toLowerCase());
+
+
+
+            //EJERCICIO 2
+            /** Genera un número aleatorio entre 1 y 100.
+             Calcula su raíz cuadrada.
+             Redondea el número a un entero.
+             Eleva el número al cuadrado.**/
+
+            let numero = Math.floor(Math.random() * 100) + 1;
+
+            console.log("Número aleatorio:", numero);
+            console.log("Raíz cuadrada:", Math.sqrt(numero));
+            console.log("Redondeado:", Math.round(numero));
+            console.log("Al cuadrado:", Math.pow(numero, 2));
+
+            // EJERCICIO 3
+            /**Objetivo: Trabajar con estructuras condicionales (if, switch).
+            a) Código que recibe la edad del usuario y muestra:
+            1. Si tiene menos de 18, muestra "Eres menor de edad".
+            2. Si tiene entre 18 y 65, muestra "Eres adulto".
+            3. Si tiene más de 65, muestra "Eres mayor".**/
+
+            let edad = parseInt(prompt("Introduce tu edad:"));
+
+            if (edad < 18) {
+                console.log("Eres menor de edad");
+            } else if (edad >= 18 && edad <= 65) {
+                console.log("Eres adulto");
+            } else {
+                console.log("Eres mayor");
+            }
+
+            /**b) Código que recibe un mes y mediante un switch muestra la estación del
+            año según ese mes.**/
+
+            let mes = prompt("Introduce un mes:").toLowerCase();
+            let estacion = "";
+
+            switch (mes) {
+                case "diciembre":
+                case "enero":
+                case "febrero":
+                    estacion = "Invierno";
+                    break;
+
+                case "marzo":
+                case "abril":
+                case "mayo":
+                    estacion = "Primavera";
+                    break;
+
+                case "junio":
+                case "julio":
+                case "agosto":
+                    estacion = "Verano";
+                    break;
+
+                case "septiembre":
+                case "octubre":
+                case "noviembre":
+                    estacion = "Otoño";
+                    break;
+
+                default:
+                    estacion = " NO EXIXTE";
+            }
+
+            console.log(estacion);
+
+            // EJERCICIO 4
+
+            /** Objetivo: Manipular arrays y recorrerlos con for, forEach.
+            1. Crea un array de 5 nombres.
+            2. Usa for para imprimir cada nombre.
+            3. Usa forEach para mostrar los nombres en mayúsculas.**/
+
+
+            let nombres = ["Pedro", "Marta", "Carla", "Andrés", "Alexánder"];
+
+            for (let i = 0; i < nombres.length; i++) {
+                console.log(nombres[i]);
+            }
+            nombres.forEach(function (nombre) {
+                console.log(nombre.toUpperCase());
+            });
+
+
+        }
+
+        function escribirConsola(mensaje) {
+            document.getElementById("consola").innerHTML += "<br>" + mensaje;
+        }
+        function limpiarConsola() {
+            document.getElementById("consola").innerHTML = "Consola simulada:";
+        }
+
+    </script>
+
+</body>
+
+</html>
